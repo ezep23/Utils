@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d6d6d6;
+    
+}
+
+.languages{
+    display: flex;
+    gap:10px;
+
+    .lang-buton{
+        padding: 10px;
+        cursor:pointer;
+    }
+}
+
+.section{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.section h2{
+    margin: 20px;
+}
