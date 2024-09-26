@@ -1,0 +1,28 @@
+/* Para activar las transcisiones necesitamos de un trigger/disparador*/
+/* Los cuales suelen ser pseudoclases :hover :active, etc*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item{
+    background-color: rgb(255, 58, 58);
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.item:hover{
+    background-color: rgb(250, 152, 152);
+    transition: background-color 2s;
+}
+
+/* TRANSITION POSEE 4 PROPIEDADES*/
+/*
+    transition-property: all; -> define que propiedades van a sufrir la transición
+    transition-duration: ; -> 
+    -o-transition-timing-function: ; ->
+    -o-transition-delay: ; -> 
+*/
