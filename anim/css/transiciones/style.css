@@ -8,21 +8,26 @@
 }
 
 .item{
-    background-color: rgb(255, 58, 58);
+    background-color: rgb(216, 219, 4);
     margin: 20px;
     padding: 40px;
     text-align: center;
+    clip-path: circle(50% at center) /* SIRVE PARA CREAR FIGURAS */ 
 }
 
+/* Lo que se puede hacer es darle hover al padre y que el hijo acepte los cambios*/
+/* ease, ease in, ease-in-out, ease-out  ->  todas ellas varian en la curva de aceleración */
+/* Si no queremos que varié podemos utilizar "linear" */
 .item:hover{
-    background-color: rgb(250, 152, 152);
-    transition: background-color 2s;
+    background-color: rgb(224, 209, 1);
+    transition: 2s;
+    clip-path: circle(20% at center);
 }
 
 /* TRANSITION POSEE 4 PROPIEDADES*/
 /*
     transition-property: all; -> define que propiedades van a sufrir la transición
-    transition-duration: ; -> 
-    -o-transition-timing-function: ; ->
-    -o-transition-delay: ; -> 
+    transition-duration: ; -> para determinar la duración
+    -o-transition-timing-function: ; -> la forma ease in, ease, ease out
+    -o-transition-delay: ; -> tiempo de espera para que se ejecute una transición
 */
