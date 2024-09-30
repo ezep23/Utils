@@ -1,0 +1,51 @@
+/* EXISTEN DOS TIPOS DE ANIMAR EN CSS */
+/* TRANSITION O ANIMATION */ 
+
+
+/* ANIMATION: NO NECESITA UN DISPARADOR PARA QUE SE EJECUTE, PODEMOS CONTROLAR TODO EL FLUJO Y VARIAS PROPIEDADES A LA VEZ*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background: blue;
+    border-radius: 50%;
+
+    /* animation: ; -> shorthand */
+    animation-name: cambiarColor ; /* nombre de la animación a ejecutar*/ 
+    animation-duration: 3s; /* duración */
+    animation-iteration-count: infinite; /* Indicamos las veces a ejecutar y no permitimos que se ejecute solo al inicio*/
+    animation-direction: reverse; /* indica en donde comienza la animación */
+    animation-fill-mode: none; /* se encarga decirle al navegador que sucedera antes y después de ejecutar la animación */
+    animation-delay: 2s; /* tiempo de retraso*/
+    animation-timing-function: ease; /* tipo de aceleración ease, ease in, easeinout,etc*/
+}
+
+/* DIRECTION */
+/* NORMAL: 0 -> 100 */
+/* REVERSE: 100 -> 0 */
+/* ALTERNATE: 0 -> 100 -> 0 -> 100 */ 
+/* ALTERNATE-REVERSE: 100 -> 0 -> 100 -> 0 */
+
+/* FILL-MODE */
+/* NONE -> no cambia al finalizar */
+/* FORWARDS -> deja los estilos finales */
+/* BACKWARDS -> tendran los estilos iniciales antes de que comienza la animación */
+/* BOTH -> mezcla de forwards y backwards*/ 
+
+/* LAS ANIMACIONES SOLO SE EJECUTAN UNA VEZ CUANDO RECARGAMOS EL NAVEGADOR */
+@keyframes cambiarColor{ /* Permiten controlar el flujo de la animación*/ 
+    from{ /* 0% */
+        background-color: red;
+    }
+
+    to{ /* 100% */
+        background-color: aqua;
+    }
+}
