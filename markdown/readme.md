@@ -35,3 +35,6 @@ Tablas
 Fenced Code Block 
 ``` <h1> HOLA </h1> ```
 
+Nota al pie
+
+[´1] texto [1]
